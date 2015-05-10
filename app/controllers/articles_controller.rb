@@ -30,7 +30,7 @@ class ArticlesController < ApplicationController
 
     flash.notice = "Article '#{@article.title}' Destroyed!"
 
-    redirect_to action: 'index'
+    redirect_to article_path
   end
 
   def edit
